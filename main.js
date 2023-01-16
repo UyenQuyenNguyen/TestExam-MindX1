@@ -41,7 +41,7 @@ function returnPrime() {
     }
 
 }
-
+ 
 
 function printTriangle() {
     let height = document.getElementById('height-triangle').value;
@@ -53,10 +53,9 @@ function printTriangle() {
         for (j = 1; j <= i; j++) {
             line += "* ";
             makeLine.textContent = line;
-            document.getElementById('content').appendChild(makeLine);
-
+            document.getElementById('content-result').appendChild(makeLine);
         }
-        document.getElementById('content').appendChild(br);
+        document.getElementById('content-result').appendChild(br);
     }
 
 
