@@ -30,14 +30,19 @@ function returnPrime() {
     }
     else {
         let result = [];
+        let sum = 0;
         for (let i = a; i <= b; i++) {
             if (IsPrime(i)) {
                 result.push(i);
+                sum += i;
             }
         }
         let Notify = document.createElement('p');
         Notify.textContent = "The prime numbers between a and b are: " + result;
         document.getElementById('content').appendChild(Notify);
+        let sumOutput = document.createElement('p');
+        sumOutput.textContent = "Sum prime: " + sum;
+        document.getElementById('content').appendChild(sumOutput);
     }
 
 }
